@@ -2193,6 +2193,7 @@
             document.getElementById('text-answer')?.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter') submitTextAnswer();
             });
+            document.getElementById('text-answer')?.addEventListener('input', updateTextAnswerWarning);
             document.getElementById('search-country-input')?.addEventListener('keydown', (e) => {
                 if (e.key === 'Enter') searchCountryName();
             });
